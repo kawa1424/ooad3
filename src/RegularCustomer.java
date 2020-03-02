@@ -9,7 +9,7 @@ public class RegularCustomer implements Customer{
 
     public RegularCustomer( String name) {
         Random r = new Random();
-        numNights = r.nextInt((5 - 3) + 1) + 3;
+        numNights = r.nextInt((5 - 3) + 1) + 3; //random generator for nights and num cars
         Random r1 = new Random();
         numCars = r1.nextInt(3)+1;
         custName = name;

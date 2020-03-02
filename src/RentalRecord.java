@@ -9,7 +9,7 @@ public class RentalRecord {
 
 
     public RentalRecord(Car car, Customer customer, int day, int cost) {
-        this.currCar = car;
+        this.currCar = car; //instantiate variables
         this.carLicense = car.getLicense();
         this.custName = customer.getCustName();
         this.custNumNights = customer.getNumNights();

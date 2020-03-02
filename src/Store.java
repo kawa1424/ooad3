@@ -1,5 +1,5 @@
 import java.awt.*;
-import java.awt.desktop.SystemEventListener;
+//import java.awt.desktop.SystemEventListener;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -28,17 +28,17 @@ public class Store {
 
 
 
-    public Store(String name) {
+    public Store(String name) { //store constructor
         this.name = name;
         totalRevenue = 0;
         // CUSTOMER
-        this.customerFactory = new CustomerFactory();
+        this.customerFactory = new CustomerFactory(); //instantiate customer factory
         customers = new ArrayList<Customer>();
         // generate 12 customers
         for (int j = 0; j<12; j++){
             Random rand = new Random();
             int rand_int = rand.nextInt(3);
-            if (rand_int == 0) {
+            if (rand_int == 0) { //randomly generate customers
                 Customer customer =  customerFactory.getCustomer("BUSINESS", "B"+Integer.toString(j));
                 this.customers.add(customer);
 //                System.out.println(customer);
@@ -62,7 +62,7 @@ public class Store {
         // generate 24 cars
         for (int i = 0; i<24; i++){
             Random rand = new Random();
-            int rand_int = rand.nextInt(5);
+            int rand_int = rand.nextInt(5); //randomly generate 24 cars of each type
             if (rand_int == 0) { // economy
                 BaseCar car =  carFactory.getCar("ECONOMYCAR", i);
                 this.cars_available.add(car);
@@ -94,9 +94,9 @@ public class Store {
         //deal with logic about if the package is added
         Random rand = new Random();
 
-        Car return_with_package = null;
+        Car return_with_package = null; //start with null
 
-        int chance = rand.nextInt(10);
+        int chance = rand.nextInt(10); //generate with random probability add ons and return the packages
 
         if (chance == 5) { //get a gps
             return_with_package = new GPS(car);
@@ -123,30 +123,30 @@ public class Store {
             // get a random customer
             Random rand2 = new Random();
             int customer_index = rand2.nextInt(this.customers.size());
-//            System.out.println("current customer index: "+ customer_index);
+//
             Customer current_customer = this.customers.get(customer_index);
-//            System.out.println(current_customer.getCustName());
+//
 
             //determine number of cars the customer wants
             int testNumCars = current_customer.getNumCars();
-            if(testNumCars <= cars_available.size()){
+            if(testNumCars <= cars_available.size()){ //make sure there's enough cars
                 // for each car
-                for(int j=0; j<testNumCars; j++) {
+                for(int j=0; j<testNumCars; j++) { //get the number of cars needed
                     Random rand3 = new Random();
                     int c = rand3.nextInt(cars_available.size());
                     Car current_car = cars_available.get(c);
-//                    System.out.println("c " + current_car.getLicense());
+//
                     this.cars_available.remove(current_car);
                     //                customers.remove(current_customer);
                     System.out.println("Car being rented " + current_customer.getCustName() + " " + testNumCars);
 
                     //number of nights for customer
                     int currCustNumNights = current_customer.getNumNights();
-//                    System.out.println("CURRENT CAR " + current_car);
+//
                     //add package
-                    Car currentModifiedCar = package_add(current_car);
+                    Car currentModifiedCar = package_add(current_car); //add a pcakage
                     if(currentModifiedCar == null){
-                        currentModifiedCar = current_car;
+                        currentModifiedCar = current_car; //make sure there's a package added
                     }
 //                    else{
 //                        System.out.println("add package " +currentModifiedCar.addPackage());

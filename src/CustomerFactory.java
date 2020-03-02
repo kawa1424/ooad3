@@ -1,6 +1,7 @@
 public class CustomerFactory {
 
-    public Customer getCustomer(String customerType, String customerName){
+    public Customer getCustomer(String customerType, String customerName){ //same idea as car factory
+        //instantiate new type of customer depending on the given type
         if(customerType == null){
             return null;
         }

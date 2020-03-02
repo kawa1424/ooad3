@@ -22,7 +22,8 @@ public class CarSeat extends CarDecorator {
 
     public int getRate() {
         return this.car.getRate() + this.rate*this.numSeats;
-    }
+    } //return the rate adding the new rate
+    //of the cost of the original car + 1 for the rate of the carseat
     @Override
     public String getLicense(){
         return this.car.getLicense();

@@ -7,7 +7,7 @@ public class BusinessCustomer implements Customer{
     public String custType = "Business";
 
     public BusinessCustomer(String name) {
-        numNights = 7;
+        numNights = 7; //set the nights and the numCars
         numCars = 3;
         custName = name;
     }
@@ -18,7 +18,7 @@ public class BusinessCustomer implements Customer{
 
     public int getNumCars() {
         return numCars;
-    }
+    } //getters
     public String getCustName() {
         return custName;
     }

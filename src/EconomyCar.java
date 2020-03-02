@@ -18,7 +18,7 @@ public class EconomyCar extends BaseCar {
     @Override
     public String getLicense() {
         return "ECO"+this.id;
-    }
+    } //generate new license for the specific care type
     @Override
     public int getRate() {
         return 10;

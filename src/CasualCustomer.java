@@ -8,7 +8,7 @@ public class CasualCustomer implements Customer{
 
     public CasualCustomer(String name) {
         Random r = new Random();
-        numNights = r.nextInt(3)+1;
+        numNights = r.nextInt(3)+1; //generate a random number for the number of nights bw 1-3
         numCars = 1;
         custName = name;
     }

@@ -1,7 +1,7 @@
 public class CarFactory {
     //use getShape method to get object of type shape
     //referenced from: https://www.tutorialspoint.com/design_pattern/factory_pattern.htm
-    public BaseCar getCar(String carType, Integer id){
+    public BaseCar getCar(String carType, Integer id){ //car factory that returns a new car of the given type
         if(carType == null){
             return null;
         }
