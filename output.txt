@@ -1,20 +1,931 @@
-public class Main {
-
-    private int totalRevenue = 0;
-    public static void main(String args[]){
-        Store store = new Store();
-        int totalRev = 0;
-        for(int day=1; day < 36; day++){
-            System.out.println("===== DAY "+day+" =====");
-            totalRev += store.rent(day);
-            store.returnCars(day);
-
-        }
-        System.out.println("======FINAL======");
-        System.out.println("Total revenue: $" + totalRev);
-        System.out.println("Total rentals: " + store.getTotalRentals());
-        System.out.println("Total business rentals: " + store.getTotalBisRentals());
-        System.out.println("Total casual rentals: " + store.getTotalCasRentals());
-        System.out.println("Total regular rentals: " + store.getTotalRegRentals());
-    }
-}
+===== DAY 1 =====
+Number of customers this day: 0
+END OF DAY $0
+Active Rentals 0
+Cars Left: 24
+SUV0
+LUX1
+MVN2
+STD3
+STD4
+MVN5
+MVN6
+LUX7
+LUX8
+MVN9
+LUX10
+SUV11
+ECO12
+STD13
+SUV14
+SUV15
+LUX16
+STD17
+SUV18
+LUX19
+MVN20
+ECO21
+MVN22
+LUX23
+Completed Rentals:
+===== DAY 2 =====
+Number of customers this day: 2
+Car being rented B2 3
+add package Luxury car
+Rental Record created
+Car being rented B2 3
+add package Luxury car
+Rental Record created
+Car being rented B2 3
+add package Minivan car with 0 car seat(s)
+Rental Record created
+Car being rented R5 2
+add package Economy car with 1 car seat(s)
+Rental Record created
+Car being rented R5 2
+add package Standard car
+Rental Record created
+END OF DAY $1184
+Active Rentals 5
+B2 rented LUX8
+B2 rented LUX7
+B2 rented MVN9
+R5 rented SUV14
+R5 rented STD13
+Cars Left: 19
+SUV0
+LUX1
+MVN2
+STD3
+STD4
+MVN5
+MVN6
+LUX10
+SUV11
+ECO12
+SUV15
+LUX16
+STD17
+SUV18
+LUX19
+MVN20
+ECO21
+MVN22
+LUX23
+Completed Rentals:
+===== DAY 3 =====
+Number of customers this day: 2
+Car being rented B9 3
+add package Luxury car with satellite radio
+Rental Record created
+Car being rented B9 3
+add package Minivan car
+Rental Record created
+Car being rented B9 3
+add package Economy car
+Rental Record created
+Car being rented B11 3
+add package Minivan car
+Rental Record created
+Car being rented B11 3
+add package Economy car
+Rental Record created
+Car being rented B11 3
+add package Standard car
+Rental Record created
+END OF DAY $2689
+Active Rentals 6
+B9 rented LUX19
+B9 rented MVN20
+B9 rented SUV11
+B11 rented MVN22
+B11 rented SUV18
+B11 rented STD4
+Cars Left: 13
+SUV0
+LUX1
+MVN2
+STD3
+MVN5
+MVN6
+LUX10
+ECO12
+SUV15
+LUX16
+STD17
+ECO21
+LUX23
+Completed Rentals:
+===== DAY 4 =====
+Number of customers this day: 0
+END OF DAY $2689
+Active Rentals 0
+Cars Left: 13
+SUV0
+LUX1
+MVN2
+STD3
+MVN5
+MVN6
+LUX10
+ECO12
+SUV15
+LUX16
+STD17
+ECO21
+LUX23
+Completed Rentals:
+===== DAY 5 =====
+Number of customers this day: 0
+END OF DAY $2689
+Active Rentals 0
+Cars Left: 13
+SUV0
+LUX1
+MVN2
+STD3
+MVN5
+MVN6
+LUX10
+ECO12
+SUV15
+LUX16
+STD17
+ECO21
+LUX23
+Completed Rentals:
+===== DAY 6 =====
+Number of customers this day: 2
+Car being rented B2 3
+add package Standard car with 1 car seat(s)
+Rental Record created
+Car being rented B2 3
+add package Luxury car
+Rental Record created
+Car being rented B2 3
+add package Economy car
+Rental Record created
+Car being rented R5 2
+add package Minivan car
+Rental Record created
+Car being rented R5 2
+add package Economy car
+Rental Record created
+END OF DAY $3536
+Active Rentals 5
+B2 rented STD17
+B2 rented LUX23
+B2 rented ECO12
+R5 rented MVN6
+R5 rented SUV0
+Cars Left: 8
+LUX1
+MVN2
+STD3
+MVN5
+LUX10
+SUV15
+LUX16
+ECO21
+Completed Rentals:
+Economy car with 1 car seat(s) with LP# SUV14 rented by R5 for 4 nights, with a total cost of $124
+Standard car with LP# STD13 rented by R5 for 4 nights, with a total cost of $80
+===== DAY 7 =====
+Number of customers this day: 0
+END OF DAY $3536
+Active Rentals 0
+Cars Left: 10
+LUX1
+MVN2
+STD3
+MVN5
+LUX10
+SUV15
+LUX16
+ECO21
+SUV14
+STD13
+Completed Rentals:
+===== DAY 8 =====
+Number of customers this day: 0
+END OF DAY $3536
+Active Rentals 0
+Cars Left: 10
+LUX1
+MVN2
+STD3
+MVN5
+LUX10
+SUV15
+LUX16
+ECO21
+SUV14
+STD13
+Completed Rentals:
+===== DAY 9 =====
+Number of customers this day: 1
+Car being rented C10 1
+add package Luxury car
+Rental Record created
+END OF DAY $3686
+Active Rentals 1
+C10 rented LUX16
+Cars Left: 9
+LUX1
+MVN2
+STD3
+MVN5
+LUX10
+SUV15
+ECO21
+SUV14
+STD13
+Completed Rentals:
+Luxury car with LP# LUX8 rented by B2 for 7 nights, with a total cost of $350
+Luxury car with LP# LUX7 rented by B2 for 7 nights, with a total cost of $350
+Minivan car with 0 car seat(s) with LP# MVN9 rented by B2 for 7 nights, with a total cost of $280
+===== DAY 10 =====
+Number of customers this day: 1
+Car being rented B4 3
+add package Economy car with 1 car seat(s) with satellite radio
+Rental Record created
+Car being rented B4 3
+add package Luxury car with 4 car seat(s)
+Rental Record created
+Car being rented B4 3
+add package Economy car with satellite radio
+Rental Record created
+END OF DAY $4421
+Active Rentals 3
+B4 rented SUV14
+B4 rented LUX1
+B4 rented ECO21
+Cars Left: 9
+MVN2
+STD3
+MVN5
+LUX10
+SUV15
+STD13
+LUX8
+LUX7
+MVN9
+Completed Rentals:
+Luxury car with satellite radio with LP# LUX19 rented by B9 for 7 nights, with a total cost of $385
+Minivan car with LP# MVN20 rented by B9 for 7 nights, with a total cost of $280
+Economy car with LP# SUV11 rented by B9 for 7 nights, with a total cost of $210
+Minivan car with LP# MVN22 rented by B11 for 7 nights, with a total cost of $280
+Economy car with LP# SUV18 rented by B11 for 7 nights, with a total cost of $210
+Standard car with LP# STD4 rented by B11 for 7 nights, with a total cost of $140
+Minivan car with LP# MVN6 rented by R5 for 4 nights, with a total cost of $160
+Economy car with LP# SUV0 rented by R5 for 4 nights, with a total cost of $120
+===== DAY 11 =====
+Number of customers this day: 0
+END OF DAY $4421
+Active Rentals 0
+Cars Left: 17
+MVN2
+STD3
+MVN5
+LUX10
+SUV15
+STD13
+LUX8
+LUX7
+MVN9
+LUX19
+MVN20
+SUV11
+MVN22
+SUV18
+STD4
+MVN6
+SUV0
+Completed Rentals:
+===== DAY 12 =====
+Number of customers this day: 2
+Car being rented B9 3
+add package Luxury car with satellite radio
+Rental Record created
+Car being rented B9 3
+add package Luxury car with 2 car seat(s)
+Rental Record created
+Car being rented B9 3
+add package Minivan car
+Rental Record created
+Car being rented B7 3
+add package Minivan car with 4 car seat(s)
+Rental Record created
+Car being rented B7 3
+add package Minivan car
+Rental Record created
+Car being rented B7 3
+add package Minivan car with satellite radio
+Rental Record created
+END OF DAY $6353
+Active Rentals 6
+B9 rented LUX19
+B9 rented LUX10
+B9 rented MVN22
+B7 rented MVN6
+B7 rented MVN20
+B7 rented MVN2
+Cars Left: 11
+STD3
+MVN5
+SUV15
+STD13
+LUX8
+LUX7
+MVN9
+SUV11
+SUV18
+STD4
+SUV0
+Completed Rentals:
+Luxury car with LP# LUX16 rented by C10 for 3 nights, with a total cost of $150
+===== DAY 13 =====
+Number of customers this day: 2
+Car being rented B7 3
+add package Economy car with 2 car seat(s)
+Rental Record created
+Car being rented B7 3
+add package Minivan car
+Rental Record created
+Car being rented B7 3
+add package Economy car with satellite radio
+Rental Record created
+Car being rented B4 3
+add package Luxury car
+Rental Record created
+Car being rented B4 3
+add package Economy car with 4 car seat(s)
+Rental Record created
+Car being rented B4 3
+add package Standard car
+Rental Record created
+END OF DAY $7830
+Active Rentals 6
+B7 rented SUV15
+B7 rented MVN5
+B7 rented SUV0
+B4 rented LUX7
+B4 rented SUV11
+B4 rented STD3
+Cars Left: 6
+STD13
+LUX8
+MVN9
+SUV18
+STD4
+LUX16
+Completed Rentals:
+Standard car with 1 car seat(s) with LP# STD17 rented by B2 for 7 nights, with a total cost of $147
+Luxury car with LP# LUX23 rented by B2 for 7 nights, with a total cost of $350
+Economy car with LP# ECO12 rented by B2 for 7 nights, with a total cost of $70
+===== DAY 14 =====
+Number of customers this day: 2
+Car being rented B7 3
+add package Standard car with 1 car seat(s) with 0 car seat(s)
+Rental Record created
+Car being rented B7 3
+add package Economy car with 4 car seat(s)
+Rental Record created
+Car being rented B7 3
+add package Luxury car with satellite radio
+Rental Record created
+Car being rented B6 3
+add package Minivan car with 0 car seat(s)
+Rental Record created
+Car being rented B6 3
+add package Luxury car with satellite radio
+Rental Record created
+Car being rented B6 3
+add package Economy car
+Rental Record created
+END OF DAY $9335
+Active Rentals 6
+B7 rented STD17
+B7 rented SUV18
+B7 rented LUX8
+B6 rented MVN9
+B6 rented LUX16
+B6 rented ECO12
+Cars Left: 3
+STD13
+STD4
+LUX23
+Completed Rentals:
+===== DAY 15 =====
+Number of customers this day: 3
+Car being rented C3 1
+add package Standard car
+Rental Record created
+Car being rented C3 1
+add package Luxury car
+Rental Record created
+Car being rented C8 1
+add package Standard car
+Rental Record created
+END OF DAY $9495
+Active Rentals 3
+C3 rented STD4
+C3 rented LUX23
+C8 rented STD13
+Cars Left: 0
+Completed Rentals:
+===== DAY 16 =====
+Number of customers this day: 3
+END OF DAY $9495
+Active Rentals 0
+Cars Left: 0
+Completed Rentals:
+Standard car with LP# STD13 rented by C8 for 1 nights, with a total cost of $20
+===== DAY 17 =====
+Number of customers this day: 2
+Car being rented C8 1
+add package Standard car
+Rental Record created
+END OF DAY $9515
+Active Rentals 1
+C8 rented STD13
+Cars Left: 0
+Completed Rentals:
+Economy car with 1 car seat(s) with satellite radio with LP# SUV14 rented by B4 for 7 nights, with a total cost of $252
+Luxury car with 4 car seat(s) with LP# LUX1 rented by B4 for 7 nights, with a total cost of $378
+Economy car with satellite radio with LP# ECO21 rented by B4 for 7 nights, with a total cost of $105
+Standard car with LP# STD4 rented by C3 for 2 nights, with a total cost of $40
+Luxury car with LP# LUX23 rented by C3 for 2 nights, with a total cost of $100
+===== DAY 18 =====
+Number of customers this day: 3
+Car being rented C10 1
+add package Luxury car with 4 car seat(s)
+Rental Record created
+Car being rented B11 3
+add package Luxury car with satellite radio
+Rental Record created
+Car being rented B11 3
+add package Standard car with 3 car seat(s)
+Rental Record created
+Car being rented B11 3
+add package Economy car with satellite radio with 3 car seat(s)
+Rental Record created
+END OF DAY $10349
+Active Rentals 4
+C10 rented LUX1
+B11 rented LUX23
+B11 rented STD4
+B11 rented ECO21
+Cars Left: 1
+SUV14
+Completed Rentals:
+Standard car with LP# STD13 rented by C8 for 1 nights, with a total cost of $20
+===== DAY 19 =====
+Number of customers this day: 2
+Car being rented C8 1
+add package Standard car with 4 car seat(s)
+Rental Record created
+Car being rented C8 1
+add package Economy car with 1 car seat(s) with satellite radio with satellite radio
+Rental Record created
+END OF DAY $10414
+Active Rentals 2
+C8 rented STD13
+C8 rented SUV14
+Cars Left: 0
+Completed Rentals:
+Luxury car with satellite radio with LP# LUX19 rented by B9 for 7 nights, with a total cost of $385
+Luxury car with 2 car seat(s) with LP# LUX10 rented by B9 for 7 nights, with a total cost of $364
+Minivan car with LP# MVN22 rented by B9 for 7 nights, with a total cost of $280
+Minivan car with 4 car seat(s) with LP# MVN6 rented by B7 for 7 nights, with a total cost of $308
+Minivan car with LP# MVN20 rented by B7 for 7 nights, with a total cost of $280
+Minivan car with satellite radio with LP# MVN2 rented by B7 for 7 nights, with a total cost of $315
+===== DAY 20 =====
+Number of customers this day: 0
+END OF DAY $10414
+Active Rentals 0
+Cars Left: 6
+LUX19
+LUX10
+MVN22
+MVN6
+MVN20
+MVN2
+Completed Rentals:
+Economy car with 2 car seat(s) with LP# SUV15 rented by B7 for 7 nights, with a total cost of $224
+Minivan car with LP# MVN5 rented by B7 for 7 nights, with a total cost of $280
+Economy car with satellite radio with LP# SUV0 rented by B7 for 7 nights, with a total cost of $245
+Luxury car with LP# LUX7 rented by B4 for 7 nights, with a total cost of $350
+Economy car with 4 car seat(s) with LP# SUV11 rented by B4 for 7 nights, with a total cost of $238
+Standard car with LP# STD3 rented by B4 for 7 nights, with a total cost of $140
+Standard car with 4 car seat(s) with LP# STD13 rented by C8 for 1 nights, with a total cost of $24
+Economy car with 1 car seat(s) with satellite radio with satellite radio with LP# SUV14 rented by C8 for 1 nights, with a total cost of $41
+===== DAY 21 =====
+Number of customers this day: 1
+Car being rented B4 3
+add package Minivan car
+Rental Record created
+Car being rented B4 3
+add package Economy car with satellite radio
+Rental Record created
+Car being rented B4 3
+add package Standard car with 4 car seat(s)
+Rental Record created
+END OF DAY $11107
+Active Rentals 3
+B4 rented MVN5
+B4 rented SUV0
+B4 rented STD13
+Cars Left: 11
+LUX19
+LUX10
+MVN22
+MVN6
+MVN20
+MVN2
+SUV15
+LUX7
+SUV11
+STD3
+SUV14
+Completed Rentals:
+Standard car with 1 car seat(s) with 0 car seat(s) with LP# STD17 rented by B7 for 7 nights, with a total cost of $147
+Economy car with 4 car seat(s) with LP# SUV18 rented by B7 for 7 nights, with a total cost of $238
+Luxury car with satellite radio with LP# LUX8 rented by B7 for 7 nights, with a total cost of $385
+Minivan car with 0 car seat(s) with LP# MVN9 rented by B6 for 7 nights, with a total cost of $280
+Luxury car with satellite radio with LP# LUX16 rented by B6 for 7 nights, with a total cost of $385
+Economy car with LP# ECO12 rented by B6 for 7 nights, with a total cost of $70
+Luxury car with 4 car seat(s) with LP# LUX1 rented by C10 for 3 nights, with a total cost of $162
+===== DAY 22 =====
+Number of customers this day: 3
+Car being rented R5 2
+add package Luxury car with satellite radio
+Rental Record created
+Car being rented R5 2
+add package Economy car with 4 car seat(s)
+Rental Record created
+Car being rented C0 1
+add package Minivan car
+Rental Record created
+Car being rented B11 3
+add package Luxury car with satellite radio
+Rental Record created
+Car being rented B11 3
+add package Economy car with 2 car seat(s)
+Rental Record created
+Car being rented B11 3
+add package Standard car with 1 car seat(s) with 0 car seat(s) with satellite radio
+Rental Record created
+END OF DAY $12154
+Active Rentals 6
+R5 rented LUX8
+R5 rented SUV18
+C0 rented MVN20
+B11 rented LUX7
+B11 rented ECO12
+B11 rented STD17
+Cars Left: 12
+LUX19
+LUX10
+MVN22
+MVN6
+MVN2
+SUV15
+SUV11
+STD3
+SUV14
+MVN9
+LUX16
+LUX1
+Completed Rentals:
+===== DAY 23 =====
+Number of customers this day: 1
+Car being rented B7 3
+add package Standard car
+Rental Record created
+Car being rented B7 3
+add package Minivan car with 0 car seat(s) with 3 car seat(s)
+Rental Record created
+Car being rented B7 3
+add package Minivan car with satellite radio with 4 car seat(s)
+Rental Record created
+END OF DAY $12938
+Active Rentals 3
+B7 rented STD3
+B7 rented MVN9
+B7 rented MVN2
+Cars Left: 9
+LUX19
+LUX10
+MVN22
+MVN6
+SUV15
+SUV11
+SUV14
+LUX16
+LUX1
+Completed Rentals:
+Minivan car with LP# MVN20 rented by C0 for 1 nights, with a total cost of $40
+===== DAY 24 =====
+Number of customers this day: 3
+Car being rented B7 3
+add package Luxury car with satellite radio
+Rental Record created
+Car being rented B7 3
+add package Minivan car
+Rental Record created
+Car being rented B7 3
+add package Minivan car
+Rental Record created
+Car being rented B4 3
+add package Economy car with 1 car seat(s) with satellite radio with satellite radio with satellite radio
+Rental Record created
+Car being rented B4 3
+add package Luxury car with 4 car seat(s)
+Rental Record created
+Car being rented B4 3
+add package Economy car with 2 car seat(s)
+Rental Record created
+Car being rented R1 2
+add package Minivan car with 4 car seat(s)
+Rental Record created
+Car being rented R1 2
+add package Luxury car with satellite radio
+Rental Record created
+END OF DAY $15104
+Active Rentals 8
+B7 rented LUX16
+B7 rented MVN22
+B7 rented MVN20
+B4 rented SUV14
+B4 rented LUX1
+B4 rented SUV15
+R1 rented MVN6
+R1 rented LUX19
+Cars Left: 2
+LUX10
+SUV11
+Completed Rentals:
+===== DAY 25 =====
+Number of customers this day: 0
+END OF DAY $15104
+Active Rentals 0
+Cars Left: 2
+LUX10
+SUV11
+Completed Rentals:
+Luxury car with satellite radio with LP# LUX23 rented by B11 for 7 nights, with a total cost of $385
+Standard car with 3 car seat(s) with LP# STD4 rented by B11 for 7 nights, with a total cost of $161
+Economy car with satellite radio with 3 car seat(s) with LP# ECO21 rented by B11 for 7 nights, with a total cost of $126
+===== DAY 26 =====
+Number of customers this day: 2
+Car being rented B4 3
+add package Economy car with 4 car seat(s)
+Rental Record created
+Car being rented B4 3
+add package Economy car with satellite radio with 3 car seat(s)
+Rental Record created
+Car being rented B4 3
+add package Luxury car with satellite radio
+Rental Record created
+END OF DAY $15853
+Active Rentals 3
+B4 rented SUV11
+B4 rented ECO21
+B4 rented LUX23
+Cars Left: 2
+LUX10
+STD4
+Completed Rentals:
+Luxury car with satellite radio with LP# LUX8 rented by R5 for 4 nights, with a total cost of $220
+Economy car with 4 car seat(s) with LP# SUV18 rented by R5 for 4 nights, with a total cost of $136
+===== DAY 27 =====
+Number of customers this day: 1
+Car being rented B6 3
+add package Standard car with 3 car seat(s)
+Rental Record created
+Car being rented B6 3
+add package Luxury car with 2 car seat(s) with 1 car seat(s)
+Rental Record created
+Car being rented B6 3
+add package Economy car with 4 car seat(s)
+Rental Record created
+END OF DAY $16623
+Active Rentals 3
+B6 rented STD4
+B6 rented LUX10
+B6 rented SUV18
+Cars Left: 1
+LUX8
+Completed Rentals:
+Minivan car with 4 car seat(s) with LP# MVN6 rented by R1 for 3 nights, with a total cost of $132
+Luxury car with satellite radio with LP# LUX19 rented by R1 for 3 nights, with a total cost of $165
+===== DAY 28 =====
+Number of customers this day: 3
+Car being rented B4 3
+add package Luxury car with satellite radio
+Rental Record created
+Car being rented B4 3
+add package Minivan car with 4 car seat(s)
+Rental Record created
+Car being rented B4 3
+add package Luxury car with satellite radio
+Rental Record created
+END OF DAY $17701
+Active Rentals 3
+B4 rented LUX19
+B4 rented MVN6
+B4 rented LUX8
+Cars Left: 0
+Completed Rentals:
+Minivan car with LP# MVN5 rented by B4 for 7 nights, with a total cost of $280
+Economy car with satellite radio with LP# SUV0 rented by B4 for 7 nights, with a total cost of $245
+Standard car with 4 car seat(s) with LP# STD13 rented by B4 for 7 nights, with a total cost of $168
+===== DAY 29 =====
+Number of customers this day: 1
+Car being rented C0 1
+add package Minivan car with satellite radio
+Rental Record created
+END OF DAY $17746
+Active Rentals 1
+C0 rented MVN5
+Cars Left: 2
+SUV0
+STD13
+Completed Rentals:
+Luxury car with satellite radio with LP# LUX7 rented by B11 for 7 nights, with a total cost of $385
+Economy car with 2 car seat(s) with LP# ECO12 rented by B11 for 7 nights, with a total cost of $84
+Standard car with 1 car seat(s) with 0 car seat(s) with satellite radio with LP# STD17 rented by B11 for 7 nights, with a total cost of $182
+===== DAY 30 =====
+Number of customers this day: 1
+Car being rented C3 1
+add package Standard car with 4 car seat(s)
+Rental Record created
+END OF DAY $17794
+Active Rentals 1
+C3 rented STD13
+Cars Left: 4
+SUV0
+LUX7
+ECO12
+STD17
+Completed Rentals:
+Standard car with LP# STD3 rented by B7 for 7 nights, with a total cost of $140
+Minivan car with 0 car seat(s) with 3 car seat(s) with LP# MVN9 rented by B7 for 7 nights, with a total cost of $301
+Minivan car with satellite radio with 4 car seat(s) with LP# MVN2 rented by B7 for 7 nights, with a total cost of $343
+Minivan car with satellite radio with LP# MVN5 rented by C0 for 1 nights, with a total cost of $45
+===== DAY 31 =====
+Number of customers this day: 1
+Car being rented C10 1
+add package Economy car with satellite radio
+Rental Record created
+END OF DAY $17899
+Active Rentals 1
+C10 rented SUV0
+Cars Left: 7
+LUX7
+ECO12
+STD17
+STD3
+MVN9
+MVN2
+MVN5
+Completed Rentals:
+Luxury car with satellite radio with LP# LUX16 rented by B7 for 7 nights, with a total cost of $385
+Minivan car with LP# MVN22 rented by B7 for 7 nights, with a total cost of $280
+Minivan car with LP# MVN20 rented by B7 for 7 nights, with a total cost of $280
+Economy car with 1 car seat(s) with satellite radio with satellite radio with satellite radio with LP# SUV14 rented by B4 for 7 nights, with a total cost of $322
+Luxury car with 4 car seat(s) with LP# LUX1 rented by B4 for 7 nights, with a total cost of $378
+Economy car with 2 car seat(s) with LP# SUV15 rented by B4 for 7 nights, with a total cost of $224
+===== DAY 32 =====
+Number of customers this day: 0
+END OF DAY $17899
+Active Rentals 0
+Cars Left: 13
+LUX7
+ECO12
+STD17
+STD3
+MVN9
+MVN2
+MVN5
+LUX16
+MVN22
+MVN20
+SUV14
+LUX1
+SUV15
+Completed Rentals:
+Standard car with 4 car seat(s) with LP# STD13 rented by C3 for 2 nights, with a total cost of $48
+===== DAY 33 =====
+Number of customers this day: 3
+Car being rented C8 1
+add package Minivan car with satellite radio with 4 car seat(s)
+Rental Record created
+Car being rented C8 1
+add package Standard car with 1 car seat(s) with 0 car seat(s) with satellite radio
+Rental Record created
+Car being rented R1 2
+add package Minivan car
+Rental Record created
+Car being rented R1 2
+add package Minivan car with satellite radio with satellite radio
+Rental Record created
+END OF DAY $18244
+Active Rentals 4
+C8 rented MVN2
+C8 rented STD17
+R1 rented MVN20
+R1 rented MVN5
+Cars Left: 10
+LUX7
+ECO12
+STD3
+MVN9
+LUX16
+MVN22
+SUV14
+LUX1
+SUV15
+STD13
+Completed Rentals:
+Economy car with 4 car seat(s) with LP# SUV11 rented by B4 for 7 nights, with a total cost of $238
+Economy car with satellite radio with 3 car seat(s) with LP# ECO21 rented by B4 for 7 nights, with a total cost of $126
+Luxury car with satellite radio with LP# LUX23 rented by B4 for 7 nights, with a total cost of $385
+===== DAY 34 =====
+Number of customers this day: 1
+Car being rented B4 3
+add package Economy car with 2 car seat(s)
+Rental Record created
+Car being rented B4 3
+add package Luxury car with satellite radio
+Rental Record created
+Car being rented B4 3
+add package Economy car with satellite radio with 3 car seat(s) with 3 car seat(s)
+Rental Record created
+END OF DAY $18860
+Active Rentals 3
+B4 rented ECO12
+B4 rented LUX7
+B4 rented ECO21
+Cars Left: 10
+STD3
+MVN9
+LUX16
+MVN22
+SUV14
+LUX1
+SUV15
+STD13
+SUV11
+LUX23
+Completed Rentals:
+Standard car with 3 car seat(s) with LP# STD4 rented by B6 for 7 nights, with a total cost of $161
+Luxury car with 2 car seat(s) with 1 car seat(s) with LP# LUX10 rented by B6 for 7 nights, with a total cost of $371
+Economy car with 4 car seat(s) with LP# SUV18 rented by B6 for 7 nights, with a total cost of $238
+Economy car with satellite radio with LP# SUV0 rented by C10 for 3 nights, with a total cost of $105
+Minivan car with satellite radio with 4 car seat(s) with LP# MVN2 rented by C8 for 1 nights, with a total cost of $49
+Standard car with 1 car seat(s) with 0 car seat(s) with satellite radio with LP# STD17 rented by C8 for 1 nights, with a total cost of $26
+===== DAY 35 =====
+Number of customers this day: 2
+Car being rented B4 3
+add package Minivan car
+Rental Record created
+Car being rented B4 3
+add package Standard car with 1 car seat(s) with 0 car seat(s) with satellite radio with 0 car seat(s)
+Rental Record created
+Car being rented B4 3
+add package Standard car
+Rental Record created
+Car being rented C8 1
+add package Economy car with 2 car seat(s)
+Rental Record created
+END OF DAY $19494
+Active Rentals 4
+B4 rented MVN22
+B4 rented STD17
+B4 rented STD3
+C8 rented SUV15
+Cars Left: 12
+MVN9
+LUX16
+SUV14
+LUX1
+STD13
+SUV11
+LUX23
+STD4
+LUX10
+SUV18
+SUV0
+MVN2
+Completed Rentals:
+Luxury car with satellite radio with LP# LUX19 rented by B4 for 7 nights, with a total cost of $385
+Minivan car with 4 car seat(s) with LP# MVN6 rented by B4 for 7 nights, with a total cost of $308
+Luxury car with satellite radio with LP# LUX8 rented by B4 for 7 nights, with a total cost of $385
+======FINAL======
+Total revenue: $360107
+Total rentals: 91
+Total business rentals: 66
+Total casual rentals: 15
+Total regular rentals: 10
