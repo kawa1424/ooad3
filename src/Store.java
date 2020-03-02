@@ -23,11 +23,13 @@ public class Store {
     private ArrayList<RentalRecord> rrsDaily = new ArrayList();
 
     private int totalRevenue;
+    private String name;
 
 
 
 
-    public Store() {
+    public Store(String name) {
+        this.name = name;
         totalRevenue = 0;
         // CUSTOMER
         this.customerFactory = new CustomerFactory();
@@ -237,6 +239,10 @@ public class Store {
             }
         }
         return count;
+    }
+
+    public String getName(){
+        return this.name;
     }
 
 }

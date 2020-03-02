@@ -2,7 +2,7 @@ public class Main {
 
     private int totalRevenue = 0;
     public static void main(String args[]){
-        Store store = new Store();
+        Store store = new Store("store one");
         int totalRev = 0;
         for(int day=1; day < 36; day++){
             System.out.println("===== DAY "+day+" =====");

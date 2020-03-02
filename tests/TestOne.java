@@ -46,16 +46,16 @@ public class TestOne {
     }
     @Test
     public void number_cars() {
-        Assert.assertTrue(casual_cust.get_number_cars() == 1);
-        Assert.assertTrue(reg_cust.get_number_cars()>=1 && reg_cust.get_number_cars()<=3);
-        Assert.assertTrue(bus_cust.get_number_cars() == 3);
+        Assert.assertTrue(casual_cust.getNumCars() == 1);
+        Assert.assertTrue(reg_cust.getNumCars()>=1 && reg_cust.getNumCars()<=3);
+        Assert.assertTrue(bus_cust.getNumCars() == 3);
     }
     @Test
     public void number_nights() {
-        Assert.assertTrue(casual_cust.get_nights()>=1 && casual_cust.get_nights()<=3);
-        Assert.assertTrue(reg_cust.get_nights()>=3 && reg_cust.get_nights()<=5);
+        Assert.assertTrue(casual_cust.getNumNights()>=1 && casual_cust.getNumNights()<=3);
+        Assert.assertTrue(reg_cust.getNumNights()>=3 && reg_cust.getNumNights()<=5);
 
-        Assert.assertTrue(bus_cust.get_nights() == 7);
+        Assert.assertTrue(bus_cust.getNumNights() == 7);
         //System.out.println("hi" +bus_cust.get_nights());
 
     }
@@ -89,20 +89,20 @@ public class TestOne {
 
     @Test
     public void car_rate() {
-        Assert.assertTrue(lux_car.get_rate() == 50 );
-        Assert.assertTrue(suv_car.get_rate() == 30);
-        Assert.assertTrue(economy_car.get_rate() == 10);
-        Assert.assertTrue(standard_car.get_rate() == 20);
-        Assert.assertTrue(minivan_car.get_rate() == 40);
+        Assert.assertTrue(lux_car.getRate() == 50 );
+        Assert.assertTrue(suv_car.getRate() == 30);
+        Assert.assertTrue(economy_car.getRate() == 10);
+        Assert.assertTrue(standard_car.getRate() == 20);
+        Assert.assertTrue(minivan_car.getRate() == 40);
 
 
     }
 
     @Test
     public void add_on_rate() {
-        Assert.assertTrue(radio.get_rate() == 5);
-        Assert.assertTrue(gps.get_rate() == 3);
-        Assert.assertTrue(carseat.get_rate() == 1);
+        Assert.assertTrue(radio.getRate() == 5);
+        Assert.assertTrue(gps.getRate() == 3);
+        Assert.assertTrue(carseat.getRate() == 1);
 
     }
 
@@ -115,7 +115,7 @@ public class TestOne {
 
     @Test
     public void Store_instance() {
-        Assert.assertTrue(store.get_name() == "store_one");
+        Assert.assertTrue(store.getName() == "store_one");
     }
 
     @Test
